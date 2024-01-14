@@ -1,0 +1,355 @@
+* {
+  /*border: 1px rgb(236, 18, 18) solid;*/
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+html {
+  width: 1440px;
+}
+
+/*Контейнер верхней навигации*/
+.ul {
+  width: 1398px;
+  display: grid;
+  grid-template-columns: 20% 10% 10% 10% 10% 1fr 15% 15% 10%;
+  background-color: #303030;
+  padding-top: 40px;
+}
+
+li {
+  display: inline;
+  color: white;
+  justify-self: center;
+  align-self: end;
+}
+
+.button {
+  background-color: #303030;
+  color: #bbcc68;
+  border: 0.5px #bbcc68 solid;
+  width: 180px;
+  height: 50px;
+}
+
+.ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.img_logo {
+  position: relative;
+  width: 1438px;
+  background-color: #303030;
+}
+/*Конец настроек верхней навигации*/
+
+.container_centr {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  justify-content: center;
+  align-content: center;
+  background: url(./images/background.png);
+  width: 1440px;
+  height: 797px;
+}
+
+.background_color_black .button {
+  margin-left: 100px;
+}
+
+.logo_center {
+  align-self: end;
+  width: 331px;
+}
+
+.text_center {
+  margin-top: 10px;
+  align-self: start;
+  text-align: center;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300px;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
+/*Начало 2-го, информационного, контейнера - Наши преимущества*/
+.container_performance {
+  background-image: url(./images/2background.png);
+  width: 1440px;
+  height: 713px;
+
+  display: grid;
+  grid-template-columns: 7% 1fr 7% 1fr 7% 1fr;
+  grid-template-rows: 30% 10% 20% 10% 20%;
+  justify-items: start;
+  grid-template-areas:
+    "auto title_glav title_glav title_glav title_glav title_glav"
+    "img_cub title1 img_time title2 img_money title3"
+    "img_cub text1 img_time text2 img_money text3"
+    "img_sofa title4 img_people title5 img_house title6"
+    "img_sofa text4 img_people text5 img_house text6";
+}
+
+.background_color_black {
+  grid-area: line_black;
+  background-color: #303030;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+  height: 110px;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+.nashi_preimuchsestva {
+  grid-area: title_glav;
+  margin: 0;
+  font-size: 30px;
+  padding-top: 100px;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+/*именуем каждый элемент для grid-area - портянка*/
+.img_cub {
+  grid-area: img_cub;
+  margin-left: 20px;
+}
+.title1 {
+  grid-area: title1;
+}
+.text1 {
+  grid-area: text1;
+}
+.img_time {
+  grid-area: img_time;
+}
+.title2 {
+  grid-area: title2;
+}
+.text2 {
+  grid-area: text2;
+}
+.img_money {
+  grid-area: img_money;
+}
+.title3 {
+  grid-area: title3;
+}
+.text3 {
+  grid-area: text3;
+}
+.img_sofa {
+  grid-area: img_sofa;
+  margin-left: 20px;
+}
+.title4 {
+  grid-area: title4;
+}
+.text4 {
+  grid-area: text4;
+}
+.img_people {
+  grid-area: img_people;
+}
+.title5 {
+  grid-area: title5;
+}
+.text5 {
+  grid-area: text5;
+}
+.img_house {
+  grid-area: img_house;
+}
+.title6 {
+  grid-area: title6;
+}
+.text6 {
+  grid-area: text6;
+}
+
+/*Контейнер - Наши проекты в инстаграмм*/
+.container_foto {
+  display: grid;
+  grid-template-areas:
+    "h1 h1 h1"
+    "foto1 foto2 foto3"
+    "foto4 foto5 foto6";
+  grid-row: 15% 35% 35% 15fr;
+  grid-column: 1fr 1fr 1fr;
+  gap: 10px;
+  justify-items: center;
+}
+
+.container_bottom_our_proekt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.container_bottom_our_proekt .button3 {
+  color: black;
+  background-color: white;
+  border: 1px black solid;
+  width: 150px;
+}
+.container_bottom_our_proekt .button {
+  width: 220px;
+}
+
+.container_bottom_our_proekt a {
+  display: flex;
+  color: black;
+  text-decoration: none;
+  align-items: center;
+  gap: 10px;
+}
+
+.h1 {
+  grid-area: h1;
+  font-weight: bold;
+}
+
+.foto1 {
+  grid-area: foto1;
+}
+
+.foto2 {
+  grid-area: foto2;
+}
+
+.foto3 {
+  grid-area: foto3;
+}
+
+.foto4 {
+  grid-area: foto4;
+}
+
+.foto5 {
+  grid-area: foto5;
+}
+
+.foto6 {
+  grid-area: foto6;
+}
+/*Стилизуем футер*/
+.footer {
+  background-color: #171717;
+  color: #707070;
+  height: 265px;
+  padding-top: 90px;
+  justify-content: space-evenly;
+
+  display: grid;
+  grid-template-rows: repeat(5, 50px);
+  grid-template-areas:
+    "logo_footer o_nas interior email tg location"
+    "logo_footer portfolio finish_works inst cho location"
+    "logo_footer price cottage vk pinterest mobile"
+    "copyrigt services furniture furniture furniture mobile"
+    "copyrigt blog furniture furniture furniture mobile";
+}
+
+.footer a {
+  text-decoration: none;
+  color: #707070;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: rgb(92, 195, 63);
+}
+
+.logo_footer {
+  grid-area: logo_footer;
+  justify-self: center;
+  align-self: end;
+  padding-bottom: 10px;
+}
+
+.copyrigt {
+  grid-area: copyrigt;
+  font-size: 12px;
+}
+
+.o_nas {
+  grid-area: o_nas;
+}
+
+.portfolio {
+  grid-area: portfolio;
+}
+
+.price {
+  grid-area: price;
+}
+
+.services {
+  grid-area: services;
+}
+
+.blog {
+  grid-area: blog;
+}
+
+.interior {
+  grid-area: interior;
+}
+
+.finish_works {
+  grid-area: finish_works;
+}
+
+.cottage {
+  grid-area: cottage;
+}
+
+.furniture {
+  grid-area: furniture;
+}
+
+.email {
+  grid-area: email;
+}
+
+.inst {
+  grid-area: inst;
+}
+
+.vk {
+  grid-area: vk;
+}
+
+.tg {
+  grid-area: tg;
+}
+
+.cho {
+  grid-area: cho;
+}
+
+.pinterest {
+  grid-area: pinterest;
+}
+
+.location {
+  grid-area: location;
+}
+
+.mobile {
+  grid-area: mobile;
+}
